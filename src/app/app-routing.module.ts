@@ -6,13 +6,12 @@ import { ItemComponent } from './pages/item/item.component';
 
 //Routing definition
 const routes: Routes = [
-  { path: '', component:BodyComponent},
+  { path: 'home', component:BodyComponent},
   { path: 'about', component:AboutComponent},
   { path: 'item', component:ItemComponent},
 
 //Routing exception
-  { path: '**', pathMatch: 'full', redirectTo: '' }
-
+  { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
 @NgModule({
