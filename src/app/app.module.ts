@@ -11,6 +11,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { BodyComponent } from './pages/body/body.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ItemComponent } from './pages/item/item.component';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ItemComponent } from './pages/item/item.component';
     FooterComponent,
     BodyComponent,
     AboutComponent,
-    ItemComponent
+    ItemComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

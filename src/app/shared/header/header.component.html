@@ -15,29 +15,17 @@
     <h1 class="rk-logo"><a routerLink="home">Urku Angular</a></h1>
     <nav class="rk-navigation">
       <ul class="rk-menu">
-        <li class="active rk-menu__item">
-          <a routerLink="" class="rk-menu__link">Shop</a>
-          <nav class="rk-menu__sub">
-            <ul class="rk-container">
-              <li class="rk-menu__item">
-                <a routerLink="" class="rk-menu__link">Women</a>
-              </li>
-              <li class="rk-menu__item">
-                <a routerLink="" class="rk-menu__link">Men</a>
-              </li>
-              <li class="rk-menu__item">
-                <a routerLink="" class="rk-menu__link">Kids</a>
-              </li>
-            </ul>
-          </nav>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a routerLink="shop" class="rk-menu__link">Shop</a>          
         </li>
-        <li routerLink="" class="rk-menu__item">
-          <a href="blog" class="rk-menu__link">Blog</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a routerLink="blog" class="rk-menu__link">Blog</a>
         </li>
-        <li class="rk-menu__item">
-          <a href="about" class="rk-menu__link">About</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a routerLink="about" class="rk-menu__link">About</a>
         </li>
-        <li class="rk-menu__item"><a href="contact" class="rk-menu__link">Contact</a>
+        <li routerLinkActive="active" class="rk-menu__item">
+          <a routerLink="contact" class="rk-menu__link">Contact</a>
         </li>
       </ul>
       <form class="rk-search">
