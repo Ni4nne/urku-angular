@@ -1,27 +1,30 @@
 <footer class="ae-container-fluid rk-footer ">
   <div class="ae-grid ae-grid--collapse">
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
-      <a href="#0" class="rk-social-btn ">
+      <a [href]="_service.info.facebook" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-facebook"></use>
-        </svg></a><a href="#" class="rk-social-btn ">
+        </svg></a>
+      <a [href]="_service.info.twitter" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-twitter"></use>
-        </svg></a><a href="#" class="rk-social-btn ">
+        </svg></a>
+      <a [href]="_service.info.instagram" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-pinterest"></use>
-        </svg></a><a href="#" class="rk-social-btn ">
+        </svg></a>
+      <a [href]="_service.info.tumblr" class="rk-social-btn ">
         <svg>
           <use xlink:href="assets/img/symbols.svg#icon-tumblr"></use>
         </svg></a>
     </div>
     <div class="ae-grid__item item-lg-4 au-xs-ta-center">
       <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">2023
-          Isabel León</span></p>
+        {{ _service.info.name}}</span></p>
     </div>
     <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
       <p class="rk-footer__text rk-footer__contact "> <span class="ae-u-bold">Email: </span><span class="ae-u-bolder">
-          <a href="#" class="rk-dark-color "> email&#64;email.com </a></span></p>
+          <a href="#" class="rk-dark-color "> {{ _service.info.email}} </a></span></p>
     </div>
   </div>
 </footer>
