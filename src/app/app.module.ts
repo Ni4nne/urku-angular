@@ -15,6 +15,9 @@ import { BlogComponent } from './pages/blog/blog.component';
 import { ShopComponent } from './pages/shop/shop.component';
 import { ContactComponent } from './pages/contact/contact.component';
 
+//Allows PUT, GET, DELETE resquest to the server 
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +32,8 @@ import { ContactComponent } from './pages/contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
