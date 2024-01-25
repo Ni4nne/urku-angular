@@ -22,4 +22,8 @@ export class ProductsService {
         this.loading = false;
       });
   }
+
+  getProduct( id: string){
+    return this.http.get(`https://urkuangular-default-rtdb.firebaseio.com/products/${ id }.json`);
+  }
 }
