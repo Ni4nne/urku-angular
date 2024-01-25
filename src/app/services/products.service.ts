@@ -5,22 +5,21 @@ import { Products } from '../interfaces/products.interface';
 @Injectable({
   providedIn: 'root'
 })
+
 export class ProductsService {
   loading = true;
   products: Products[] = [];
 
-  constructor( private http: HttpClient) { 
-
+  constructor(private http: HttpClient) {
     this.loadProducts();
   }
 
   private loadProducts() {
-
     this.http.get('https://urkuangular-default-rtdb.firebaseio.com/products_idx.json')
-    .subscribe( (resp: any) => {
-        
-      this.products = resp;
-      this.loading= false;
-    });
+      .subscribe((resp: any) => {
+
+        this.products = resp;
+        this.loading = false;
+      });
   }
 }
