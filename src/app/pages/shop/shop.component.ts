@@ -6,6 +6,7 @@ import { ProductsService } from '../../services/products.service';
   templateUrl: './shop.component.html',
   styleUrl: './shop.component.css'
 })
+
 export class ShopComponent {
    constructor (public productsService: ProductsService){
     

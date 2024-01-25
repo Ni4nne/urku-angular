@@ -11,7 +11,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 const routes: Routes = [
   { path: 'home', component:BodyComponent},
   { path: 'about', component:AboutComponent},
-  { path: 'item', component:ItemComponent},
+  { path: 'item/:id', component:ItemComponent},
   { path: 'blog', component:BlogComponent},
   { path: 'shop', component:ShopComponent},
   { path: 'contact', component:ContactComponent},
