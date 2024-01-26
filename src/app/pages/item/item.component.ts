@@ -12,15 +12,10 @@ import { ProductDescription } from '../../interfaces/product-description.interfa
 export class ItemComponent implements OnInit {
 
   productDescription: any;
-
-  
-
-
-
-
+  id: any;
 
   constructor(private route: ActivatedRoute,
-              public productService: ProductsService) { }
+    public productService: ProductsService) { }
 
   ngOnInit() {
     this.route.params
@@ -29,10 +24,11 @@ export class ItemComponent implements OnInit {
         //console.log(parameters['id']);
 
         this.productService.getProduct(parameters['id'])
-          .subscribe( (productDescription: any)=> {
+          .subscribe((productDescription: any) => {
+            this.id = parameters['id'];
             this.productDescription = productDescription;
             console.log(productDescription);
-            
+
           });
       });
   }
