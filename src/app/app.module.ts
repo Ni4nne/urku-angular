@@ -17,6 +17,7 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 //Allows PUT, GET, DELETE resquest to the server 
 import { HttpClientModule } from '@angular/common/http';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItemComponent,
     BlogComponent,
     ShopComponent,
-    ContactComponent
+    ContactComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
