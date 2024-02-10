@@ -28,19 +28,24 @@
           <a routerLink="contact" class="rk-menu__link">Contact</a>
         </li>
       </ul>
-      <div class="rk-search">
-        <input type="text" 
-        (keyup.enter)="searchProduct(txtSearch.value)"
-              placeholder="Search..."
-              id="urku-search" 
-              class="rk-search-field"
-              #txtSearch>
-        <label for="urku-search">
-          <svg>
-            <use xlink:href="assets/img/symbols.svg#icon-search"></use>
-          </svg>
-        </label>
-      </div>
+
+      <!-- DIV Search-->
+          <div class="rk-search">
+            <!-- By pressing ENTER, call to function searchProduct from header.component.ts-->
+            <input type="text" 
+                  (keyup.enter)="searchProduct(txtSearch.value)"
+                  placeholder="Search..."
+                  id="urku-search" 
+                  class="rk-search-field"
+                  #txtSearch>
+                  
+            <label for="urku-search">
+              <svg>
+                <use xlink:href="assets/img/symbols.svg#icon-search"></use>
+              </svg>
+            </label>
+          </div>
+
     </nav>
   </div>
 </header>

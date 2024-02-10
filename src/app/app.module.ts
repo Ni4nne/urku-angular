@@ -30,7 +30,7 @@ import { SearchComponent } from './pages/search/search.component';
     BlogComponent,
     ShopComponent,
     ContactComponent,
-    SearchComponent
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
